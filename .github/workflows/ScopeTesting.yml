@@ -10,8 +10,6 @@ jobs:
       DEVELOPER_DIR: /Applications/Xcode_11.3.1.app/Contents/Developer
     steps:
       - uses: actions/checkout@v2
-      - name: Environment variables
-        run: printenv
       - name: Download Scope
         run: carthage update
       - name: macOS
@@ -28,8 +26,6 @@ jobs:
         destination: ["OS=13.3,name=iPhone 11 Pro"] #, "OS=12.4,name=iPhone XS", "OS=11.4,name=iPhone X", "OS=10.3.1,name=iPhone SE"]
     steps:
       - uses: actions/checkout@v2
-      - name: Environment variables
-        run: printenv
       - name: Download Scope
         run: carthage update
       - name: iOS - ${{ matrix.destination }}
@@ -47,8 +43,6 @@ jobs:
         destination: ["OS=13.3,name=Apple TV 4K"] #, "OS=11.4,name=Apple TV 4K", "OS=10.2,name=Apple TV 1080p"]
     steps:
       - uses: actions/checkout@v2
-      - name: Environment variables
-        run: printenv
       - name: Download Scope
         run: carthage update
       - name: tvOS - ${{ matrix.destination }}

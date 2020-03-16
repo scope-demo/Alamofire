@@ -98,6 +98,11 @@
             value = "$(SCOPE_XCODE_DSN)"
             isEnabled = "YES">
          </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "SCOPE_INSTRUMENTATION_HTTP_PAYLOADS"
+            value = "YES"
+            isEnabled = "YES">
+         </EnvironmentVariable>
       </EnvironmentVariables>
       <AdditionalOptions>
          <AdditionalOption
