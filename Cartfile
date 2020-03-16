@@ -1,1 +1,1 @@
-binary "https://releases.undefinedlabs.com/scope/agents/carthage/ScopeAgent.json"
+binary "https://releases.undefinedlabs.com/scope/agents/carthage/ScopeAgent.json" ~> 0.5.9-beta.1
