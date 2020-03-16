@@ -13,9 +13,10 @@ jobs:
       - name: Download Scope
         run: carthage update
       - name: macOS
-        run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire macOS" -destination "platform=macOS" test
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire macOS" -destination "platform=macOS" clean test | xcpretty
         env:
           SCOPE_DSN: ${{secrets.SCOPE_DSN}}
+
   iOS:
     name: Test iOS 
     runs-on: macOS-latest
@@ -29,7 +30,7 @@ jobs:
       - name: Download Scope
         run: carthage update
       - name: iOS - ${{ matrix.destination }}
-        run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire iOS" -destination "${{ matrix.destination }}" test
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire iOS" -destination "${{ matrix.destination }}" clean test | xcpretty
         env:
           SCOPE_DSN: ${{secrets.SCOPE_DSN}}
 
@@ -46,6 +47,6 @@ jobs:
       - name: Download Scope
         run: carthage update
       - name: tvOS - ${{ matrix.destination }}
-        run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire tvOS" -destination "${{ matrix.destination }}" test
+        run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire tvOS" -destination "${{ matrix.destination }}" clean test | xcpretty
         env:
           SCOPE_DSN: ${{secrets.SCOPE_DSN}}
