@@ -48,8 +48,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;"
-               shellToInvoke = "${SRCROOT}/Carthage/Build/tvOS/ScopeAgent.framework/scope-coverage">
+               scriptText = "${SRCROOT}/Carthage/Build/tvOS/ScopeAgent.framework/scope-coverage&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
