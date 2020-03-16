@@ -16,6 +16,8 @@ jobs:
         run: carthage update
       - name: macOS
         run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire macOS" -destination "platform=macOS" test
+        env:
+          SCOPE_DSN: ${{secrets.SCOPE_DSN}}
   iOS:
     name: Test iOS 
     runs-on: macOS-latest
@@ -32,6 +34,9 @@ jobs:
         run: carthage update
       - name: iOS - ${{ matrix.destination }}
         run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire iOS" -destination "${{ matrix.destination }}" test
+        env:
+          SCOPE_DSN: ${{secrets.SCOPE_DSN}}
+
   tvOS:
     name: Test tvOS 
     runs-on: macOS-latest
@@ -48,4 +53,5 @@ jobs:
         run: carthage update
       - name: tvOS - ${{ matrix.destination }}
         run: xcodebuild -project "Alamofire.xcodeproj" -scheme "Alamofire tvOS" -destination "${{ matrix.destination }}" test
-
+        env:
+          SCOPE_DSN: ${{secrets.SCOPE_DSN}}
