@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -305,6 +305,12 @@
 		4CFB030F1D7D2FA20056F249 /* utf8_string.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB02F41D7D2FA20056F249 /* utf8_string.txt */; };
 		4DD67C241A5C58FB00ED2280 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = F8111E3819A95C8B0040E7D1 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DD67C251A5C590000ED2280 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897FF4019AA800700AB5182 /* Alamofire.swift */; };
+		66A051D2241F6C3600FED7BA /* ScopeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A051D1241F6C3600FED7BA /* ScopeAgent.framework */; platformFilter = ios; };
+		66A051D4241F6C3B00FED7BA /* ScopeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A051D3241F6C3B00FED7BA /* ScopeAgent.framework */; };
+		66A051D7241F6C5300FED7BA /* ScopeAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A051D5241F6C4200FED7BA /* ScopeAgent.framework */; };
+		66AA4B44241F77280053E39C /* ScopeAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A051D1241F6C3600FED7BA /* ScopeAgent.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66AA4B46241F77330053E39C /* ScopeAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A051D3241F6C3B00FED7BA /* ScopeAgent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66AA4B48241F773D0053E39C /* ScopeAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A051D5241F6C4200FED7BA /* ScopeAgent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8035DB621BAB492500466CB3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8111E3319A95C8B0040E7D1 /* Alamofire.framework */; };
 		E4202FD01B667AA100C997FB /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2724E1AF88FB500F1D59A /* ParameterEncoding.swift */; };
 		E4202FD21B667AA100C997FB /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE2C451AF89FF300BABAE5 /* ResponseSerialization.swift */; };
@@ -344,6 +350,39 @@
 			remoteInfo = "Alamofire OSX";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66AA4B43241F76C70053E39C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66AA4B44241F77280053E39C /* ScopeAgent.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AA4B45241F772D0053E39C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66AA4B46241F77330053E39C /* ScopeAgent.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66AA4B47241F773B0053E39C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				66AA4B48241F773D0053E39C /* ScopeAgent.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3111CE8720A77843008315E2 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
@@ -437,6 +476,9 @@
 		4CFB02F41D7D2FA20056F249 /* utf8_string.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = utf8_string.txt; sourceTree = "<group>"; };
 		4CFD6B132201338E00FFB5E3 /* CachedResponseHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandlerTests.swift; sourceTree = "<group>"; };
 		4DD67C0B1A5C55C900ED2280 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A051D1241F6C3600FED7BA /* ScopeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScopeAgent.framework; path = Carthage/Build/iOS/ScopeAgent.framework; sourceTree = "<group>"; };
+		66A051D3241F6C3B00FED7BA /* ScopeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScopeAgent.framework; path = Carthage/Build/Mac/ScopeAgent.framework; sourceTree = "<group>"; };
+		66A051D5241F6C4200FED7BA /* ScopeAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScopeAgent.framework; path = Carthage/Build/tvOS/ScopeAgent.framework; sourceTree = "<group>"; };
 		B39E2F831C1A72F8002DA1A9 /* certDER.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.cer; path = selfSignedAndMalformedCerts/certDER.cer; sourceTree = "<group>"; };
 		B39E2F841C1A72F8002DA1A9 /* certDER.crt */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.crt; path = selfSignedAndMalformedCerts/certDER.crt; sourceTree = "<group>"; };
 		B39E2F851C1A72F8002DA1A9 /* certDER.der */ = {isa = PBXFileReference; lastKnownFileType = file; name = certDER.der; path = selfSignedAndMalformedCerts/certDER.der; sourceTree = "<group>"; };
@@ -476,6 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CF626F91BA7CB3E0011A099 /* Alamofire.framework in Frameworks */,
+				66A051D7241F6C5300FED7BA /* ScopeAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8035DB621BAB492500466CB3 /* Alamofire.framework in Frameworks */,
+				66A051D2241F6C3600FED7BA /* ScopeAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F829C6B81A7A94F100A2CD59 /* Alamofire.framework in Frameworks */,
+				66A051D4241F6C3B00FED7BA /* ScopeAgent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -791,6 +836,16 @@
 			path = String;
 			sourceTree = "<group>";
 		};
+		66A051D0241F6C3600FED7BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A051D5241F6C4200FED7BA /* ScopeAgent.framework */,
+				66A051D3241F6C3B00FED7BA /* ScopeAgent.framework */,
+				66A051D1241F6C3600FED7BA /* ScopeAgent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B39E2F821C1A72E5002DA1A9 /* Varying Encoding Types and Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -813,6 +868,7 @@
 				F8111E3519A95C8B0040E7D1 /* Source */,
 				F8111E3F19A95C8B0040E7D1 /* Tests */,
 				F8111E3419A95C8B0040E7D1 /* Products */,
+				66A051D0241F6C3600FED7BA /* Frameworks */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -941,6 +997,8 @@
 				4CF626F41BA7CB3E0011A099 /* Sources */,
 				4CF626F51BA7CB3E0011A099 /* Frameworks */,
 				4CF626F61BA7CB3E0011A099 /* Resources */,
+				66AA4B42241F6E890053E39C /* ShellScript */,
+				66AA4B47241F773B0053E39C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1013,6 +1071,8 @@
 				F8111E3A19A95C8B0040E7D1 /* Sources */,
 				F8111E3B19A95C8B0040E7D1 /* Frameworks */,
 				F8111E3C19A95C8B0040E7D1 /* Resources */,
+				66AA4B40241F6E580053E39C /* ShellScript */,
+				66AA4B43241F76C70053E39C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1031,6 +1091,8 @@
 				F829C6AE1A7A94F100A2CD59 /* Sources */,
 				F829C6AF1A7A94F100A2CD59 /* Frameworks */,
 				F829C6B01A7A94F100A2CD59 /* Resources */,
+				66AA4B41241F6E7B0053E39C /* ShellScript */,
+				66AA4B45241F772D0053E39C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1256,6 +1318,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66AA4B40241F6E580053E39C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Carthage/Build/iOS/ScopeAgent.framework/upload_symbols\n";
+		};
+		66AA4B41241F6E7B0053E39C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Carthage/Build/Mac/ScopeAgent.framework/Resources/upload_symbols\n";
+		};
+		66AA4B42241F6E890053E39C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/Carthage/Build/tvOS/ScopeAgent.framework/upload_symbols\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CF626EA1BA7CB3E0011A099 /* Sources */ = {
@@ -1547,6 +1663,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1565,6 +1685,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1580,6 +1704,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1596,6 +1724,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1718,7 +1850,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1865,6 +1997,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Manual;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1882,6 +2018,10 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Manual;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1898,6 +2038,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1914,6 +2058,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
