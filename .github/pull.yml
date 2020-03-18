@@ -3,3 +3,4 @@ rules:
   - base: master
     upstream:  Alamofire:master
     mergeMethod: rebase
+    mergeUnstable: true
